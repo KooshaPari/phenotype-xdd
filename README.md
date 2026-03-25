@@ -1,5 +1,7 @@
 # xDD Methodologies Compendium
 
+**See also (org hub):** [`docs/engineering/100-PRACTICES.md`](../docs/engineering/100-PRACTICES.md) (180+ numbered practices), [`WRAP_AND_ROLL_GOVERNANCE.md`](../docs/engineering/WRAP_AND_ROLL_GOVERNANCE.md), [`TOP_LEVEL_REPO_LAYOUT.md`](../docs/engineering/TOP_LEVEL_REPO_LAYOUT.md), and [`plans/xdd-hexagonal-reference-architecture.md`](../plans/xdd-hexagonal-reference-architecture.md).
+
 ## Executive Summary
 
 This repository documents **100+** extreme/extended Development Disciplines (xDD) - a comprehensive collection of software engineering methodologies, practices, processes, and principles for building maintainable, extensible, and high-quality software systems.
