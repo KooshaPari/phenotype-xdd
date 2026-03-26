@@ -1,6 +1,46 @@
-# xDD Methodologies Compendium
+# phenotype-xdd — xDD Methodologies Compendium Hub
 
-**See also (org hub):** [`docs/engineering/100-PRACTICES.md`](../docs/engineering/100-PRACTICES.md) (180+ numbered practices), [`WRAP_AND_ROLL_GOVERNANCE.md`](../docs/engineering/WRAP_AND_ROLL_GOVERNANCE.md), [`TOP_LEVEL_REPO_LAYOUT.md`](../docs/engineering/TOP_LEVEL_REPO_LAYOUT.md), and [`plans/xdd-hexagonal-reference-architecture.md`](../plans/xdd-hexagonal-reference-architecture.md).
+> **Classification:** Special-purpose hub / governance reference
+> **Prefix policy:** Keep `phenotype-` — this is a reference asset, not a library
+> **Phase 6 status:** Keep as-is; documented as a special-purpose hub
+> **See also:** [`docs/engineering/100-PRACTICES.md`](../docs/engineering/100-PRACTICES.md) (180+ numbered practices), [`WRAP_AND_ROLL_GOVERNANCE.md`](../docs/engineering/WRAP_AND_ROLL_GOVERNANCE.md), [`TOP_LEVEL_REPO_LAYOUT.md`](../docs/engineering/TOP_LEVEL_REPO_LAYOUT.md), [`plans/xdd-hexagonal-reference-architecture.md`](../plans/xdd-hexagonal-reference-architecture.md)
+
+## What This Is
+
+A **read-only reference hub** documenting 150+ extreme/extended Development Disciplines (xDD) — software engineering methodologies, practices, processes, and principles. This is **not** a package or library; it is a living encyclopedia for the Phenotype ecosystem.
+
+## Scope (150+ x-DD Methodologies)
+
+| Category | Count | Examples |
+|----------|-------|----------|
+| Core Development Disciplines | 15+ | TDD, BDD, ATDD, FDD, SDD, EDD |
+| Architecture Patterns | 20+ | Hexagonal, Clean, Onion, CQRS, Event Sourcing |
+| SOLID/Design Principles | 27+ | DRY, KISS, YAGNI, GRASP, POLA, LoD |
+| DDD Patterns | 32+ | Bounded Context, Aggregates, Value Objects, Events |
+| Testing Methodologies | 27+ | Property-Based, Mutation, Fuzz, Snapshot, A/B |
+| Observability Patterns | 24+ | Structured Logging, RED/USE, Circuit Breaker, DORA |
+| Security Patterns | 18+ | Zero Trust, OAuth, Secrets Management |
+| Data Patterns | 18+ | CQRS, Event Sourcing, CAP Theorem, Sharding |
+| Platform-Specific | 15+ | Rust Ownership, Go Goroutines, TS Types |
+| Meta-Practices | 25+ | Wrap-Over Rules, Code Freeze, Arch Review, Incident Response |
+
+## Relationship to Other Hubs
+
+| Hub | Type | Purpose |
+|-----|------|---------|
+| `phenotype-xdd` | Reference | x-DD methodology encyclopedia |
+| `phenotype-forge` | Tool | CLI task runner / build orchestrator |
+| `phenotype-skills-clone` | Reference | Skills catalog + scaffolding |
+
+## What This Is NOT
+
+- ❌ Not a package or library (no `Cargo.toml`, `package.json`)
+- ❌ Not a tool (use `phenotype-forge` for tooling)
+- ❌ Not a skills repository (use `phenotype-skills-clone` for skills)
+
+## Contributing
+
+This is a living document. Submit PRs to add new methodologies or improve descriptions.
 
 ## Executive Summary
 
