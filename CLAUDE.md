@@ -1,29 +1,21 @@
-# CLAUDE.md - Development Guidelines for phenotype-xdd
+# phenotype-xdd
 
-## Project Overview
+Comprehensive reference for 150+ software engineering methodologies: x-DD patterns (TDD, BDD, DDD, etc.), architecture styles, testing strategies, observability, security, and more.
 
-xDD (executable Documentation-Driven Development) framework
+## Stack
+- Language: Documentation (Markdown)
+- Default branch: docs/productization
 
-## Key Files
+## Structure
+- Methodology reference docs organized by category
+- Architecture, testing, observability, security patterns
 
--  - Project overview
-- See project-specific directories
+## Key Patterns
+- Each methodology entry: definition, when to use, anti-patterns, examples
+- Cross-references between related methodologies
+- Intended as agent reference material, not executable code
 
-## Development Commands
-
-```bash
-pip install -e ".[dev]" && pytest
-```
-
-## Architecture Principles
-
-- **SOLID** - Single Responsibility, Dependency Inversion
-- **DRY** - Shared abstractions
-- **PoLA** - Descriptive error types
-
-## Phenotype Org Rules
-
-- UTF-8 encoding only in all text files
-- Worktree discipline: canonical repo stays on `main`
-- CI completeness: fix all CI failures before merging
-- Never commit agent directories (`.claude/`, `.codex/`, `.cursor/`)
+## Adding New Functionality
+- New methodology: add a Markdown file in the appropriate category directory
+- Follow existing format: definition, context, forces, solution, consequences
+- Link to related patterns in the cross-reference section
