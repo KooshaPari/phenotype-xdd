@@ -1,10 +1,2 @@
-import { defineConfig } from '@playwright/test';
-
-export default defineConfig({
-  testDir: '.',
-  webServer: {
-    command: 'npm run docs:build && npm run docs:dev',
-    port: 4173,
-    reuseExistingServer: !process.env.CI,
-  },
-});
+import { defineConfig } from '@playwright/test'
+export default defineConfig({ testDir: './tests/e2e', use: { baseURL: process.env.BASE_URL || 'http://localhost:5173', trace: 'on-first-retry' } })

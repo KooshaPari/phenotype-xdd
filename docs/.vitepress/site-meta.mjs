@@ -1,12 +1,14 @@
-export function createSiteMeta() {
+export function createSiteMeta({ base = '/' } = {}) {
   return {
-    docsRoot: '/docs/',
-    locales: {
-      root: { label: 'English', lang: 'en-US' },
-      'zh-CN': { label: 'Simplified Chinese', lang: 'zh-CN' },
-      'zh-TW': { label: 'Traditional Chinese', lang: 'zh-TW' },
-      fa: { label: 'Persian', lang: 'fa-IR', dir: 'rtl' },
-      'fa-Latn': { label: 'Persian Latin', lang: 'fa-Latn' },
+    base,
+    title: 'phenotype-xdd',
+    description: 'xDD Methodologies Compendium',
+    themeConfig: {
+      nav: [
+        { text: 'Home', link: base || '/' },
+        { text: 'Guide', link: '/guide/' },
+        { text: 'Reference', link: '/reference/' },
+      ],
     },
-  };
+  }
 }
