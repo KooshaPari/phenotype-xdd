@@ -1,33 +1,31 @@
-# Contributing to phenoXdd
+# Contributing to phenotype-xdd
 
-Standardized Phenotype-org contribution guidelines.
+Standardized Phenotype enterprise contribution guidelines.
 
 ## Development Workflow
 
-- Follow the branch-based delivery protocol described in `CLAUDE.md` / `AGENTS.md`.
-- Run local quality gates (build, lint, test) before opening a PR.
-- Document user-facing changes in `CHANGELOG.md` under the `[Unreleased]` section.
-- AgilePlus spec references are required for non-trivial work; see
-  `/Users/kooshapari/CodeProjects/Phenotype/repos/AgilePlus`.
-- Reuse shared infrastructure from
-  [`phenoShared`](https://github.com/KooshaPari/phenoShared) where applicable
-  before hand-rolling utilities.
+- Follow the branch-based delivery protocol in CLAUDE.md
+- Ensure all CI policy gates are green before requesting review
+- Document all user-facing changes in CHANGELOG.md
 
-## Branch Naming
+## Code Standards
 
-Use `<type>/<topic>`, e.g. `feat/new-transport`, `fix/retry-backoff`,
-`chore/hygiene-bootstrap`, `docs/architecture-overview`.
+- Follow language-specific style guides
+- All public APIs must have documentation
+- Tests are required for all new functionality
+- Run linting and formatting before committing
 
-## Commit Style
+## Pull Request Process
 
-Conventional Commits (`feat:`, `fix:`, `chore:`, `docs:`, `refactor:`, `test:`,
-`perf:`, `build:`, `ci:`).
+1. Create feature branch from main
+2. Implement changes with tests
+3. Ensure all CI checks pass
+4. Request review from maintainer
+5. Squash and merge after approval
 
-## PR Checklist
+## Reporting Issues
 
-- [ ] Tests added or updated (with FR/spec traceability where applicable).
-- [ ] `CHANGELOG.md` updated under `[Unreleased]`.
-- [ ] Lint, format, and test gates pass locally.
-- [ ] No suppressed lint/type errors without an inline justification + tracking
-      reference.
-- [ ] Linked AgilePlus spec / issue if applicable.
+- Use issue templates when available
+- Include reproduction steps
+- Specify environment details
+- Tag appropriately (bug, feature, docs)
