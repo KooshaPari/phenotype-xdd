@@ -1,18 +1,3 @@
-# CODEOWNERS — phenoXdd
-# Default fallback owner
-* @KooshaPari
+# Default owner (sponsor)
+* @kooshapari
 
-# Code areas
-/src/ @KooshaPari
-/tests/ @KooshaPari
-/docs/ @KooshaPari
-
-# Configuration
-/.github/ @KooshaPari
-/Cargo.toml @KooshaPari
-/package.json @KooshaPari
-/go.mod @KooshaPari
-
-# Sensitive
-/SECURITY.md @KooshaPari
-/.github/workflows/ @KooshaPari
