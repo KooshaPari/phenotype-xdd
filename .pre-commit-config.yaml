@@ -1,17 +1,34 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v4.5.0
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
       - id: check-yaml
       - id: check-json
-      - id: check-added-large-files
-      - id: check-merge-conflict
       - id: check-toml
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: ['--maxkb=500']
       - id: detect-private-key
-  - repo: https://github.com/compilerla/conventional-pre-commit
-    rev: v3.0.0
+      - id: mixed-line-ending
+
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.18.2
     hooks:
-      - id: conventional-pre-commit
-        stages: [commit-msg]
+      - id: gitleaks
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.2.6
+    hooks:
+      - id: codespell
+        args: ['--ignore-words-list=crate,ratatui']
+
+  - repo: local
+    hooks:
+      - id: check-editorconfig
+        name: Check EditorConfig
+        entry: editorconfig-checker
+        language: system
+        files: \.(rs|py|go|ts|js|yml|yaml|json|toml|md)$
+        pass_filenames: true

@@ -2,22 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
 ### Added
-- Repository hygiene bootstrap: `SECURITY.md`, `CONTRIBUTING.md`, `.github/CODEOWNERS`, `CHANGELOG.md` (per audit #206).
+- xDD testing framework
+- Property-based testing
+- Contract testing
+- Mutation testing support
 
-### Changed
+## [0.1.0] - 2026-04-02
 
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
-
-[Unreleased]: https://github.com/KooshaPari/phenoXdd/compare/HEAD...HEAD
+### Added
+- Initial xDD framework
+- Property testing strategies
+- Contract verification
+- SpecDD support
