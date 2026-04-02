@@ -1,29 +1,42 @@
 # Security Policy
 
-## Reporting a Vulnerability
-
-Do not open public issues for security vulnerabilities. Report them privately
-via [GitHub Security Advisories](https://github.com/KooshaPari/phenoXdd/security/advisories/new)
-or by emailing the maintainers at [kooshapari@gmail.com](mailto:kooshapari@gmail.com).
-
-Please include:
-
-- A description of the vulnerability.
-- Steps to reproduce (proof of concept).
-- Potential impact.
-- Any suggested fixes or mitigations.
-
-We will acknowledge reports within 48 hours and provide a remediation timeline.
-
 ## Supported Versions
 
-This repository tracks `main`. Security fixes are applied to `main` and rolled
-into the next tagged release.
+We provide security updates for the following versions of **phenotype-xdd**:
 
-## Automated Scanning
+| Version | Supported          |
+| ------- | ------------------ |
+| v0.1.x  | :white_check_mark: |
+| < v0.1  | :x:                |
 
-This repository is covered by:
+## Reporting a Vulnerability
 
-- Semgrep + CodeQL SAST (via GitHub Actions).
-- `trufflehog` secret scanning on pre-commit and CI.
-- Snyk dependency scanning.
+We take the security of **phenotype-xdd** seriously. If you discover a security vulnerability, please do NOT open a public issue. Instead, report it privately.
+
+Please report any security concerns directly to the maintainers at [kooshapari@gmail.com](mailto:kooshapari@gmail.com).
+
+### What to include in your report
+- A detailed description of the vulnerability
+- Steps to reproduce (proof of concept)
+- Potential impact on the system or user data
+- Any suggested fixes or mitigations
+
+We will acknowledge your report within 48 hours and provide a timeline for resolution.
+
+## Security Best Practices (TypeScript)
+
+- **Dependency Scanning**: All dependencies are scanned for vulnerabilities
+- **Input Validation**: All user inputs are validated and sanitized
+- **Secret Management**: Secrets are managed via environment variables, never hardcoded
+- **Error Handling**: Error messages do not expose sensitive information
+- **Logging**: Sensitive data is redacted from logs
+
+## Hardening Measures
+
+- **Static Analysis**: Regular SAST scans using security linters
+- **Dependency Audit**: Automated vulnerability scanning in CI
+- **Code Review**: Security-focused review for all changes
+- **Minimal Dependencies**: Keep dependency count minimal to reduce attack surface
+
+---
+Thank you for helping keep the ecosystem secure!
