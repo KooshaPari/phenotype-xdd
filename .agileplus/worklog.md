@@ -1,5 +1,7 @@
 # $repo — Worklog
 
+
+**Category: RESEARCH**
 ## 2026-04-03
 
 ### Audit Remediation Initiated
