@@ -1,29 +1,37 @@
-# CLAUDE.md - Development Guidelines for phenotype-xdd
+# CLAUDE.md — phenoXdd
 
 ## Project Overview
 
-xDD (executable Documentation-Driven Development) framework
+**Name**: phenoXdd
+**Purpose**: Development infrastructure for phenotype projects
+**Language**: Rust
+**Status**: Active
 
-## Key Files
+## Development
 
--  - Project overview
-- See project-specific directories
-
-## Development Commands
-
+### Build
 ```bash
-pip install -e ".[dev]" && pytest
+cargo build
 ```
 
-## Architecture Principles
+### Test
+```bash
+cargo test --workspace
+```
 
-- **SOLID** - Single Responsibility, Dependency Inversion
-- **DRY** - Shared abstractions
-- **PoLA** - Descriptive error types
+### Lint & Format
+```bash
+cargo clippy --workspace
+```
 
-## Phenotype Org Rules
+## Quality Gates
 
-- UTF-8 encoding only in all text files
-- Worktree discipline: canonical repo stays on `main`
-- CI completeness: fix all CI failures before merging
-- Never commit agent directories (`.claude/`, `.codex/`, `.cursor/`)
+- All tests must pass
+- All lints must pass
+- No suppressions without justification
+
+## Governance References
+
+- **Parent governance**: `/Users/kooshapari/CodeProjects/Phenotype/repos/CLAUDE.md`
+- **Global governance**: `/Users/kooshapari/.claude/CLAUDE.md`
+- **Local agents**: See `AGENTS.md`
