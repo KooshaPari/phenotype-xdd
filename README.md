@@ -1,5 +1,9 @@
 # phenotype-xdd — xDD Methodologies Compendium Hub
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![CI](https://github.com/KooshaPari/phenoXdd/actions/workflows/ci.yml/badge.svg)](https://github.com/KooshaPari/phenoXdd/actions/workflows/ci.yml)
+[![Docs](https://img.shields.io/badge/docs-markdown-blue.svg)](https://commonmark.org)
+
 > **Classification:** Special-purpose hub / governance reference
 > **Prefix policy:** Keep `phenotype-` — this is a reference asset, not a library
 > **Phase 6 status:** Keep as-is; documented as a special-purpose hub
