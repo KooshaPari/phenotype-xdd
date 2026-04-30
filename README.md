@@ -113,7 +113,7 @@ This repository documents **100+** extreme/extended Development Disciplines (xDD
 - Exploratory specification
 - _References: Fry 2014_
 
-### 8. Chaos Engineering (TBD - Test-By Destruction)
+### 8. Chaos Engineering (planned - Test-By Destruction)
 - Deliberately inject failures
 - Verify system resilience
 - Production hypothesis testing
