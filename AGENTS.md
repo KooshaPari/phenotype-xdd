@@ -1,0 +1,11 @@
+# phenoXdd âºGENTS.MD
+
+ Project Overview
+Repository of 150+ software engineering methodologies and xDD (executable Design-Driven) patterns. Reference and documentation project.
+## Stack
+- Language: Mixed (Markdown docs, verify for code components)
+- Docs: Markdown-first
+## Key Commands
+- `lsà-la  (verify local setup)
+## Notes
+Primarily a knowledge/reference repository. Check for actual code components before running build commands. Pattern catalog &amp; additive changes preferred.
